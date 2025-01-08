@@ -12,37 +12,25 @@ pip install -r requirements.txt
 
 # File Structure and Description
 - SAMRocks
-  - checkpoints
-    - (Stores model checkpoint files)
-  - data
-    - (Stores project data)
-    - inputdata
-      - (Contains images and corresponding JSON label files)
-    - testdata
-      - (Contains test set rock thin-section images)
+  - checkpoints (Stores model checkpoint files)
+  - data (Stores project data)
+    - inputdata (Contains images and corresponding JSON label files)
+    - testdata (Contains test set rock thin-section images)
     - traindata
-      - images
-        - (Original rock thin-section images)
-      - labels
-        - (Image label files)
-      - sams
-        - (Images segmented by the SAM model)
-  - Dataset
-    - (Data processing module)
+      - images (Original rock thin-section images)
+      - labels (Image label files)
+      - sams (Images segmented by the SAM model)
+  - Dataset (Data processing module)
   - Main
-    - model_result
-      - (Stores model predictions and evaluation results)
-    - results
-      - (Stores outputs for grain extraction, etc.)
+    - model_result (Stores model predictions and evaluation results)
+    - results (Stores outputs for grain extraction, etc.)
     - One_Data_preprocessing.ipynb
     - Two_Train_models.ipynb
     - Three_Use_models.ipynb
-  - Mineral_segmentation
-    - (Module for grain segmentation, stitching, etc.)
-  - scrips
-    - (Configuration files)
-  - segment-anything-main
-    - (SAM model directory)
+  - Mineral_segmentation (Module for grain segmentation, stitching, etc.)
+  - scrips (Configuration files)
+  - segment-anything-main (SAM model directory)
+
 
 # How to Run
 1. Prepare your rock thin-section images and their corresponding JSON files. Make sure no Chinese characters are used in paths or filenames. Place them into the `inputdata` folder.
