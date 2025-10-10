@@ -42,6 +42,17 @@ pip install -r requirements.txt
 # Data  
 The datasets used in this project are derived from two publicly available datasets, aiming to validate the algorithm's usability and transferability while ensuring the reliability and reproducibility of the experimental results. These datasets are sourced from [Micro image data set of some rock forming minerals, typical metamorphic minerals and oolitic thin sections](https://www.scidb.cn/en/detail?dataSetId=684362351280914432&language=zh_CN&dataSetType=journal) and [A photomicrograph dataset of rocks for petrology teaching in Nanjing University](http://www.csdata.org/p/474/2/). Their public availability ensures data transparency and provides a standardized reference for subsequent research. By utilizing publicly available datasets, the project better evaluates the algorithm's performance across different scenarios and data types, providing guidance for related research and applications.  
 
+# Model Training Hyperparameter Settings
+
+|  Parameter Name| img size |batch size|Learning rate | Area |Line Threshold | Data Augmentation Factor|
+|--|--|--|--|--|--|--|
+| Parameter Setting |224*224  |32 |0.01|150	|0.15	|5
+
+- img size：Image processing size. Exceeding this size may cause memory overflow
+ - Area ： Minimum area filtering (pixel area), segmentation results smaller than this area will be filtered, eliminating data redundancy while ensuring the reliability of SAM segmentation results
+ - Line Threshold ：The line filtering threshold ranges from 0 to 1. Image segmentation results smaller than the set value will be filtered, removes narrow edges without feature information to prevent data redundancy and improve model performance
+ - Data Augmentation Factor, the multiple of data enhancement. Exceeding this multiple will lead to an increase in training costs, and when the enhancement multiple is too large, the performance improvement is not significant
+
 # License
 Copyright 2025  Zhuofeng Zhang
 
