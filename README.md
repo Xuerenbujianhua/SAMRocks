@@ -42,6 +42,14 @@ pip install -r requirements.txt
 # Data  
 The datasets used in this project are derived from two publicly available datasets, aiming to validate the algorithm's usability and transferability while ensuring the reliability and reproducibility of the experimental results. These datasets are sourced from [Micro image data set of some rock forming minerals, typical metamorphic minerals and oolitic thin sections](https://www.scidb.cn/en/detail?dataSetId=684362351280914432&language=zh_CN&dataSetType=journal) and [A photomicrograph dataset of rocks for petrology teaching in Nanjing University](http://www.csdata.org/p/474/2/). Their public availability ensures data transparency and provides a standardized reference for subsequent research. By utilizing publicly available datasets, the project better evaluates the algorithm's performance across different scenarios and data types, providing guidance for related research and applications.  
 
+Data Availability Statement
+This dataset is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+You are free to use, modify, and redistribute the data provided that:
+1.you give appropriate credit to the original author(s);
+2.your use is non-commercial;
+3.any derivative works are shared under the same license.
+The dataset is available at:https://www.kaggle.com/datasets/xuerenjianhua/rock-slice-dataset-and-labels
+
 # Model Training Hyperparameter Settings
 
 |  Parameter Name| img size |batch size|Learning rate | Area |Line Threshold | Data Augmentation Factor|
